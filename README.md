@@ -1,17 +1,37 @@
-# NLP_text_summarization
-Terms of Service Text Summarization Project
+#Terms of Service Text Summarization using NLP 
 
-Project Overview
+**Text Summarization with GPT-2, BART, and T5**
 
-This project is dedicated to identifying the most effective NLP model for summarizing Terms of Service documents. Given the complexity and length of these documents, our goal is to leverage state-of-the-art NLP techniques to produce concise, accurate summaries that capture the essential terms and conditions. This initiative aims to enhance user understanding and accessibility of legal documents by automating the summarization process.
+**Project Overview**
 
-Features
-Comparative analysis of multiple advanced NLP models including BART, T5, and GPT-3.
-Custom preprocessing pipeline tailored for legal documents.
-Evaluation framework based on ROUGE scores, readability indices, and legal accuracy.
-Getting Started
-Prerequisites
-Python 3.8 or newer
-PyTorch 1.8 or later
-Transformers library version 4.5 or above
-Accelerate library version 0.21.0 or higher
+This repository is dedicated to training and using NLP models for text summarization. We have employed three different models: GPT-2, BART, and T5, using a custom dataset to facilitate diverse summarization capabilities. The models have been trained to handle summarization tasks effectively, providing users with concise versions of longer text segments.
+
+**Repository Contents**
+
+Training: This section of the repository explains the process of training the models using the dataset we created. Detailed instructions are provided to help users replicate the training process.
+Usage: After training, the models are stored on Google Drive for accessibility. This repository contains scripts and instructions on how to load and use these pre-trained models to perform text summarization.
+
+**Prerequisites**
+
+Access to Google Colab or a similar environment with at least 12GB of computational power.
+A Google Drive account to access the trained models.
+Python (version 3.6 or later)
+Required Python libraries: transformers, torch, etc.
+
+**Training the Models**
+
+Set up your environment: Ensure that all necessary libraries are installed.
+Run the training script: Navigate to the training directory and execute the script provided.
+Save the model: After training, the script will automatically save the model to your Google Drive.
+Using the Trained Models
+Download the model: Ensure you have access to the trained models stored in Google Drive.
+Set up your environment: Similar to the training phase, ensure all dependencies are installed.
+Execute the usage script: This script will load the model and you can input your text for summarization.
+
+**Limitations**
+
+Currently, the training is optimized for smaller datasets due to the computational limits of Google Colab (12GB). For larger datasets, additional computational resources may be required.
+
+**Future Work**
+
+Future updates will focus on optimizing the models for larger datasets and improving accuracy. This will involve either upgrading the computational resources or refining the models to be more efficient with high-volume data.
